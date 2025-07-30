@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Css on ExampleSite</title>
-    <link>http://localhost:1313/tags/css/</link>
-    <description>Recent content in Css on ExampleSite</description>
+    <title>Css on SaSy&#39;s Adventures</title>
+    <link>http://localhost:1313/sasy-adventure/tags/css/</link>
+    <description>Recent content in Css on SaSy&#39;s Adventures</description>
     <image>
-      <title>ExampleSite</title>
-      <url>http://localhost:1313/images/papermod-cover.png</url>
-      <link>http://localhost:1313/images/papermod-cover.png</link>
+      <title>SaSy&#39;s Adventures</title>
+      <url>http://localhost:1313/sasy-adventure/images/papermod-cover.png</url>
+      <link>http://localhost:1313/sasy-adventure/images/papermod-cover.png</link>
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/sasy-adventure/tags/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown Syntax Guide</title>
-      <link>http://localhost:1313/posts/markdown-syntax/</link>
+      <link>http://localhost:1313/sasy-adventure/posts/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/markdown-syntax/</guid>
+      <guid>http://localhost:1313/sasy-adventure/posts/markdown-syntax/</guid>
       <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
     </item>
   </channel>
