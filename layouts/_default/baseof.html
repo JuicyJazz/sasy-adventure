@@ -22,6 +22,11 @@
         {{- block "main" . }}{{ end }}
     </main>
     {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+    {{ $carouselJS := resources.Get "js/carousel.js" | minify | fingerprint }}
+    <script type="text/javascript" src="{{ $carouselJS.RelPermalink }}" integrity="{{ $carouselJS.Data.Integrity }}"></script>
+
+    {{ $carouselCSS := resources.Get "css/extended/carousel.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $carouselCSS.RelPermalink }}" integrity="{{ $carouselCSS.Data.Integrity }}">
 </body>
 
 </html>

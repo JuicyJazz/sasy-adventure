@@ -1,0 +1,24 @@
+{{- $items := .Params -}}
+<div class="carousel-container">
+  <div class="carousel-track">
+    {{ range $items }}
+      {{ $src := . }}
+      {{ $res := $.Page.Resources.GetMatch $src }}
+      {{ if $res }}
+        {{ $mime := $res.MediaType.Type }}
+        {{ if strings.HasPrefix $mime "video/" }}
+          <video controls class="carousel-item" preload="metadata">
+            <source src="{{ $res.RelPermalink }}" type="{{ $mime }}">
+            Votre navigateur ne supporte pas la vidéo.
+          </video>
+        {{ else if strings.HasPrefix $mime "image/" }}
+          <img class="carousel-item" src="{{ $res.RelPermalink }}" alt="carousel item" loading="lazy" />
+        {{ else }}
+          <p style="color:orange;">⚠️ Format inconnu : {{ $src }} (type: {{ $mime }})</p>
+        {{ end }}
+      {{ else }}
+        <p style="color:red;">⚠️ Fichier introuvable : {{ $src }}</p>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
