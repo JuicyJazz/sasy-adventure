@@ -7,6 +7,10 @@
 
 <head>
     {{- partial "head.html" . }}
+    <!--  {{- partial "custom-header.html" . }}
+    {{ $gradientCSS := resources.Get "/css/extended/hero-gradient.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $gradientCSS.RelPermalink }}">
+    -->
 </head>
 
 <body class="
@@ -18,15 +22,19 @@
 {{- end -}}
 " id="top">
     {{- partialCached "header.html" . .Page -}}
-    <main class="main">
-        {{- block "main" . }}{{ end }}
-    </main>
-    {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
-    {{ $carouselJS := resources.Get "js/carousel.js" | minify | fingerprint }}
-    <script type="text/javascript" src="{{ $carouselJS.RelPermalink }}" integrity="{{ $carouselJS.Data.Integrity }}"></script>
+    <div class="background-blur-wrapper">
+        <div class="content-box">
+            <main class="main">
+                {{- block "main" . }}{{ end }}
+            </main>
+            {{ partialCached "footer.html" . .Layout .Kind (.Param "hideFooter") (.Param "ShowCodeCopyButtons") -}}
+            {{ $carouselJS := resources.Get "js/carousel.js" | minify | fingerprint }}
+            <script type="text/javascript" src="{{ $carouselJS.RelPermalink }}" integrity="{{ $carouselJS.Data.Integrity }}"></script>
 
-    {{ $carouselCSS := resources.Get "css/extended/carousel.css" | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $carouselCSS.RelPermalink }}" integrity="{{ $carouselCSS.Data.Integrity }}">
+            {{ $carouselCSS := resources.Get "css/extended/carousel.css" | minify | fingerprint }}
+            <link rel="stylesheet" href="{{ $carouselCSS.RelPermalink }}" integrity="{{ $carouselCSS.Data.Integrity }}">
+        </div>
+    </div>
 </body>
 
 </html>
