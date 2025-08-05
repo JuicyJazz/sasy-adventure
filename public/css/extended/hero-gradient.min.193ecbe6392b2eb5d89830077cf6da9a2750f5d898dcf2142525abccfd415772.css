@@ -1,0 +1,1 @@
+.animated-gradient{background:linear-gradient(270deg,#6e27b4,#b42ed5,#ff4f70);background-size:600% 600%;animation:gradientMove 12s ease infinite;color:#fff;padding:4rem 2rem;border-radius:1rem}@keyframes gradientMove{0%{background-position:0}50%{background-position:100%}100%{background-position:0}}

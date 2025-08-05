@@ -1,0 +1,38 @@
+.animated-gradient-background {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.animated-gradient-background::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+
+  background: linear-gradient(
+    270deg,
+    #ff6ec4,
+    #7873f5,
+    #4ADEDE,
+    #5ffbf1,
+    #ff6ec4
+  );
+  background-size: 1000% 1000%;
+
+  animation: gradientFlow 20s ease infinite;
+  opacity: 0.6; /* adoucit le rendu */
+  filter: blur(40px);
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 2rem;
+}
+
+@keyframes gradientFlow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
