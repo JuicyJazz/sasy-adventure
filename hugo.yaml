@@ -113,7 +113,7 @@ params:
   author: Salome et Sylvain
   # author: ["Me", "You"] # multiple authors
 
-  defaultTheme: auto
+  defaultTheme: light
   disableThemeToggle: true
   ShowShareButtons: true
   ShowReadingTime: true
@@ -143,11 +143,11 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "Les aventures de Salome et Sylvain au Canada"
+    Title: "Les aventures de Salomé et Sylvain au Canada"
     Content: >
-      👋 Bienvenue sur le blog qui couvre les aventures de Salome et Sylvain au **Canada**.
+      👋 Bienvenue sur le blog qui couvre les aventures de Salomé et Sylvain au **Canada**.
 
-      - Nous écrivons des petits recits et anecdotes lors de notre séjour de 2 ans  
+      - Nous écrivons des petits recits et anecdotes lors de notre séjour de 2 ans.  
 
 
   socialIcons:
