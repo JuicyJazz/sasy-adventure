@@ -11,8 +11,36 @@
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 26 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/sasy-adventure/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Farm</title>
+      <link>http://localhost:1313/sasy-adventure/tags/farm/</link>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sasy-adventure/tags/farm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>New Brunswick</title>
+      <link>http://localhost:1313/sasy-adventure/tags/new-brunswick/</link>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sasy-adventure/tags/new-brunswick/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel</title>
+      <link>http://localhost:1313/sasy-adventure/tags/travel/</link>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sasy-adventure/tags/travel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Workaway</title>
+      <link>http://localhost:1313/sasy-adventure/tags/workaway/</link>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sasy-adventure/tags/workaway/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Docs</title>
       <link>http://localhost:1313/sasy-adventure/tags/docs/</link>
