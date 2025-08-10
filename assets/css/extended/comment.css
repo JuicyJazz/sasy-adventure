@@ -1,0 +1,11 @@
+iframe[data-cusdis-frame] {
+  width: 100% !important;
+  height: auto !important;   /* remplace min-height */
+  min-height: 1200px !important; /* mets une valeur haute si beaucoup de commentaires */
+  border: none !important;
+}
+.cusdis-container {
+  max-width: 800px; /* Optionnel, pour limiter la largeur et rester élégant */
+  margin: 2rem auto;
+  padding: 0 1rem;
+}

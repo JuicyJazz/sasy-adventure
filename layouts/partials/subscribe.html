@@ -1,0 +1,28 @@
+<div class="subscription-box">
+<form
+  id="buttondown-form"
+  action="https://buttondown.email/api/emails/embed-subscribe/juicyjazz"
+  method="post"
+  target="popupwindow"
+  onsubmit="window.open('https://buttondown.email/juicyjazz', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
+  class="buttondown-form"
+>
+  <label for="bd-email">Recevez un email quand un nouvel article sort :</label>
+  <input type="email" name="email" id="bd-email" placeholder="Votre email" required>
+  <input type="submit" value="S’abonner">
+</form>
+<div id="subscription-success" class="hidden">
+  🎉 Merci ! Vous êtes maintenant abonné(e).
+</div>
+<script>
+document.getElementById('buttondown-form').addEventListener('submit', function(e) {
+  // on ne bloque plus le submit complet pour que Buttondown fonctionne normalement
+  // mais on affiche quand même le message
+  setTimeout(() => {
+    const msg = document.getElementById('subscription-success');
+    msg.classList.remove('hidden');
+    msg.classList.add('show');
+  }, 500);
+});
+</script>
+</div>
