@@ -41,11 +41,39 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       const scrollTo = function(event) {
+          //event.preventDefault();
+          //ele.scrollLeft = ele.querySelector(this.getAttribute('href')).offsetLeft;
           event.preventDefault();
-          ele.scrollLeft = ele.querySelector(this.getAttribute('href')).offsetLeft;
+          const targetId = this.dataset.target;
+          ele.scrollLeft = ele.querySelector('#' + targetId).offsetLeft;
       }
       
+      
+
+      const goToSlide = function(bullet) {
+        const targetId = bullet.querySelector('a').dataset.target;
+        ele.scrollLeft = ele.querySelector('#' + targetId).offsetLeft;
+      }
+
       const nextSlide = function() {
+          const current = carousel.querySelector('ol li.selected');
+          if (current && current.nextElementSibling) {
+              goToSlide(current.nextElementSibling);
+          } else {
+              goToSlide(carousel.querySelector('ol li:first-child'));
+          }
+      }
+
+      const prevSlide = function() {
+          const current = carousel.querySelector('ol li.selected');
+          if (current && current.previousElementSibling) {
+              goToSlide(current.previousElementSibling);
+          } else {
+              goToSlide(carousel.querySelector('ol li:last-child'));
+          }
+      }
+      
+      /* const nextSlide = function() {
           if(!carousel.querySelector('ol li:last-child').classList.contains('selected')) {
               carousel.querySelector('ol li.selected').nextElementSibling.querySelector('a').click();
           } else {
@@ -59,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
           } else {
               carousel.querySelector('ol li:last-child a').click();
           }
-      }
+      } */
       
       const setInteracted = function() {
         ele.classList.add('interacted');
@@ -82,7 +110,14 @@ document.addEventListener('DOMContentLoaded', function() {
       prevarrow.addEventListener("touchstart", setInteracted);
 
       bullets.forEach(function(bullet) {
-        bullet.querySelector('a').addEventListener('click', scrollTo);
+        bullet.querySelector('a').addEventListener('click', function(e) {
+          e.preventDefault(); // bloque le saut vers l'ancre
+          const targetSelector = this.getAttribute('href');
+          const targetEl = ele.querySelector(targetSelector);
+          if (targetEl) {
+            ele.scrollLeft = targetEl.offsetLeft;
+          }
+        });
         bullet.addEventListener("mousedown", setInteracted);
         bullet.addEventListener("touchstart", setInteracted);
       });
@@ -95,10 +130,8 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         }, carousel.getAttribute('duration'));
       }
-    
-    
+      
   }); //end foreach
-
 }); //end onload
 
 

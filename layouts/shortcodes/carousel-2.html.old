@@ -1,0 +1,32 @@
+{{ $height := (.Get "height") }}
+{{ $unit := (.Get "unit") }}
+{{ $items := (.Get "items") }}
+<div id="carousel{{ .Ordinal }}" class="carousel" duration="{{ .Get "duration" }}">
+  <ul>
+    {{- range $index, $slide := .Page.Resources.Match (print (.Get "data") "/*") }}
+      {{ $mime := $slide.MediaType.Type }}
+      <li id="c{{ $.Ordinal }}_slide{{ add $index 1 }}" style="min-width: calc(100%/{{ $items }}); padding-bottom: {{ $height }}{{ $unit }};">
+        {{ if strings.HasPrefix $mime "image/" }}
+          <img src="{{ $slide.RelPermalink }}" alt="" />
+        {{ else if strings.HasPrefix $mime "video/" }}
+          <video controls preload="metadata" style="width: 100%; height: auto;">
+            <source src="{{ $slide.RelPermalink }}" type="{{ $slide.MediaType }}" />
+            Votre navigateur ne supporte pas la vidéo.
+          </video>
+        {{ else }}
+          <p style="color:orange;">⚠️ Format non supporté : {{ $slide.RelPermalink }} (type: {{ $mime }})</p>
+        {{ end }}
+        <div><div>{{ $slide.Name }}</div></div>
+      </li>
+    {{- end }}
+  </ul>
+
+  <ol>
+    {{- range $index, $slide := .Page.Resources.Match (print (.Get "data") "/*") }}
+      <li><a href="#c{{ $.Ordinal }}_slide{{ add $index 1 }}"></a></li>
+    {{- end }}
+  </ol>
+
+  <div class="prev">&lsaquo;</div>
+  <div class="next">&rsaquo;</div>
+</div>
