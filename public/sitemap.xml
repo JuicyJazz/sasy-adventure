@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/sasy-adventure/posts/2025/8/nb-workaway/sussexbeachmoncton/</loc>
+    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/sasy-adventure/posts/2025/8/nb-workaway/stjohn/</loc>
     <lastmod>2025-08-10T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,31 +17,40 @@
     <loc>http://localhost:1313/sasy-adventure/posts/2025/7/omega-park/</loc>
     <lastmod>2025-07-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/sasy-adventure/tags/beach/</loc>
+    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/sasy-adventure/tags/farm/</loc>
-    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/sasy-adventure/tags/fleamarket/</loc>
+    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/sasy-adventure/tags/moncton/</loc>
+    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/sasy-adventure/tags/new-brunswick/</loc>
+    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/sasy-adventure/posts/</loc>
+    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/sasy-adventure/</loc>
+    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/sasy-adventure/tags/</loc>
+    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/sasy-adventure/tags/travel/</loc>
+    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/sasy-adventure/tags/workaway/</loc>
+    <lastmod>2025-08-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/sasy-adventure/tags/fundy/</loc>
     <lastmod>2025-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/sasy-adventure/tags/new-brunswick/</loc>
-    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/sasy-adventure/posts/</loc>
-    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/sasy-adventure/tags/saint-john/</loc>
-    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/sasy-adventure/</loc>
-    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/sasy-adventure/tags/</loc>
-    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/sasy-adventure/tags/travel/</loc>
-    <lastmod>2025-08-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/sasy-adventure/tags/workaway/</loc>
     <lastmod>2025-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/sasy-adventure/tags/canada/</loc>

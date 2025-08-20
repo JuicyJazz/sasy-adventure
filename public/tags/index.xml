@@ -11,13 +11,55 @@
     </image>
     <generator>Hugo -- 0.147.7</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/sasy-adventure/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beach</title>
+      <link>http://localhost:1313/sasy-adventure/tags/beach/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sasy-adventure/tags/beach/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Farm</title>
       <link>http://localhost:1313/sasy-adventure/tags/farm/</link>
-      <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/sasy-adventure/tags/farm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fleamarket</title>
+      <link>http://localhost:1313/sasy-adventure/tags/fleamarket/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sasy-adventure/tags/fleamarket/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Moncton</title>
+      <link>http://localhost:1313/sasy-adventure/tags/moncton/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sasy-adventure/tags/moncton/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>New Brunswick</title>
+      <link>http://localhost:1313/sasy-adventure/tags/new-brunswick/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sasy-adventure/tags/new-brunswick/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Travel</title>
+      <link>http://localhost:1313/sasy-adventure/tags/travel/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sasy-adventure/tags/travel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Workaway</title>
+      <link>http://localhost:1313/sasy-adventure/tags/workaway/</link>
+      <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/sasy-adventure/tags/workaway/</guid>
       <description></description>
     </item>
     <item>
@@ -28,31 +70,10 @@
       <description></description>
     </item>
     <item>
-      <title>New Brunswick</title>
-      <link>http://localhost:1313/sasy-adventure/tags/new-brunswick/</link>
-      <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sasy-adventure/tags/new-brunswick/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Saint-John</title>
       <link>http://localhost:1313/sasy-adventure/tags/saint-john/</link>
       <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/sasy-adventure/tags/saint-john/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Travel</title>
-      <link>http://localhost:1313/sasy-adventure/tags/travel/</link>
-      <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sasy-adventure/tags/travel/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Workaway</title>
-      <link>http://localhost:1313/sasy-adventure/tags/workaway/</link>
-      <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sasy-adventure/tags/workaway/</guid>
       <description></description>
     </item>
     <item>
