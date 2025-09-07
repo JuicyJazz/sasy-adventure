@@ -1,6 +1,6 @@
 ---
 title: "Paumés dans le New Brunswick" 
-summary: Début d'un nouveau woofing au New Brunswick
+summary: Woofing dans la ferme des Comfort
 date: 2025-08-05
 weight: 1
 aliases: ["/newbrunswick-1"]
