@@ -1,11 +1,11 @@
 ---
 title: "Découverte du Parc Omega" 
-summary: Un séjour au parc Omega
+summary: Des skunks, de la bave et des carottes
 date: 2025-07-26
 weight: 1
 aliases: ["/parc-omega"]
 tags: ["PaperMod", "Docs"]
-author: ["Salome et Sylvain"]
+author: ["Salomé et Sylvain"]
 ShowToc: false
 cover:
   hiddenInList: true

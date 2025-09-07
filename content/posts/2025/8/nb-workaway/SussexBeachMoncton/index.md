@@ -1,6 +1,6 @@
 ---
 title: "Un marché aux puces, sable fin et anecdote juteuse" 
-summary: Deuxième week-end d'excursion au New Brunswick
+summary: Un week-end d'exploration au New Brunswick
 date: 2025-08-16
 weight: 1
 aliases: ["/newbrunswick-4"]

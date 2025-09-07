@@ -1,0 +1,60 @@
+{{- $height := (.Get "height") }}
+{{- $unit := (.Get "unit") }}
+{{- $items := (.Get "items") }}
+
+<div id="carousel{{ .Ordinal }}" class="carousel" duration="{{ .Get "duration" }}">
+  <ul>
+    {{- range $index, $slide := .Page.Resources.Match (print (.Get "data") "/*") }}
+      {{/* Détection type + mime */}}
+      {{- $isVideo := false -}}
+      {{- $mime := "" -}}
+      {{- $src := $slide.RelPermalink -}}
+      {{- $res := $slide -}}
+
+      {{- if $res -}}
+        {{- $mime = printf "%s" $res.MediaType -}}  {{/* ex: "image/jpeg" ou "video/mp4" */}}
+        {{- if strings.HasPrefix $mime "video/" -}}
+          {{- $isVideo = true -}}
+        {{- end -}}
+      {{- else -}}
+        {{- $lower := lower $src -}}
+        {{- if or (strings.HasSuffix $lower ".mp4") (strings.HasSuffix $lower ".webm") (strings.HasSuffix $lower ".ogv") (strings.HasSuffix $lower ".m4v") (strings.HasSuffix $lower ".mov") -}}
+          {{- $isVideo = true -}}
+          {{- if strings.HasSuffix $lower ".mp4"  }}{{- $mime = "video/mp4"  -}}{{ end -}}
+          {{- if strings.HasSuffix $lower ".webm" }}{{- $mime = "video/webm" -}}{{ end -}}
+          {{- if strings.HasSuffix $lower ".ogv"  }}{{- $mime = "video/ogg"  -}}{{ end -}}
+          {{- if strings.HasSuffix $lower ".m4v"  }}{{- $mime = "video/mp4"  -}}{{ end -}}
+          {{- if strings.HasSuffix $lower ".mov"  }}{{- $mime = "video/quicktime" -}}{{ end -}}
+        {{- else -}}
+          {{- if or (strings.HasSuffix $lower ".jpg") (strings.HasSuffix $lower ".jpeg") (strings.HasSuffix $lower ".png") (strings.HasSuffix $lower ".gif") (strings.HasSuffix $lower ".webp") (strings.HasSuffix $lower ".svg") -}}
+            {{- $mime = "image/*" -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+
+      <li id="c{{ $.Ordinal }}_slide{{ add $index 1 }}"
+          style="min-width: calc(100%/{{ $items }}); padding-bottom: {{ $height }}{{ $unit }};">
+
+        {{- if $isVideo -}}
+          <video controls preload="metadata" playsinline
+                 style="width:100%; height:100%; object-fit:cover; display:block;">
+            <source src="{{ $src }}" {{ if $mime }}type="{{ $mime }}"{{ end }}>
+            Votre navigateur ne supporte pas la vidéo.
+          </video>
+        {{- else -}}
+          <img src="{{ $src }}" alt=""
+               style="width:100%; height:100%; object-fit:cover; display:block;" />
+        {{- end -}}
+      </li>
+    {{- end }}
+  </ul>
+
+  <ol>
+    {{- range $index, $_ := .Page.Resources.Match (print (.Get "data") "/*") }}
+      <li><a data-target="c{{ $.Ordinal }}_slide{{ add $index 1 }}"></a></li>
+    {{- end }}
+  </ol>
+
+  <div class="prev">&lsaquo;</div>
+  <div class="next">&rsaquo;</div>
+</div>
